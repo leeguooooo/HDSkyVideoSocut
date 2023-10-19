@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>HDSky Video Scout</title>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			flex-direction: column;
+		}
+
+		#drop_zone {
+			border: 2px dashed #aaa;
+			padding: 20px;
+			width: 70%;
+			text-align: center;
+		}
+
+		#details-container p {
+			margin: 5px 0;
+		}
+
+		#details-container span {
+			color: #007BFF;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="drop_zone">请拖放您的视频文件到这里</div>
+
+	<script src="./renderer.js"></script>
+
+	<!-- 详细信息容器 -->
+	<pre id="details-container" style="display:none;"></pre>
+
+</body>
+
+</html>

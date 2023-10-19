@@ -1,0 +1,23 @@
+{
+  "name": "HDSkyVideoScout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "mac-intel": "electron-packager . HDSkyVideoScout --platform=darwin --arch=x64 --out=dist/ --icon=assets/hdskyVideoScout.icns --overwrite",
+    "mac-m1": "electron-packager . HDSkyVideoScout --platform=darwin --arch=arm64 --out=dist/ --icon=assets/hdskyVideoScout.icns --overwrite",
+    "win32": "electron-packager . HDSkyVideoScout --platform=win32 --arch=ia32 --out=dist/ --icon=assets/hdskyVideoScout.ico --overwrite",
+    "win64": "electron-packager . HDSkyVideoScout --platform=win32 --arch=x64 --out=dist/ --icon=assets/hdskyVideoScout.ico --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@electron/get": "^2.0.3",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "electron": "^27.0.1"
+  }
+}
